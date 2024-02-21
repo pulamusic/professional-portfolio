@@ -2,14 +2,34 @@
   "name": "professional-portfolio",
   "version": "0.1.0",
   "description": "my professional portfolio",
-  "main": "index.js",
+  "main": "./scripts/index.js",
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy"
   },
-  "author": "Jim Carroll",
+  "author": {
+    "name": "Jim Carroll",
+    "url": "https://github.com/pulamusic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pulamusic/professional-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pulamusic/professional-portfolio/issues"
+  },
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-img": "^1.0.0-beta.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-activity-feed": "^1.0.9",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-bundle": "^1.0.5",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "luxon": "^3.4.4",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7"
   }
 }
